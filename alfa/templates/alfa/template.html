@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+        {% block title %}}
+        {% endblock %}
+        </title>
+        {% load static %}
+        <link rel='stylesheet' href="{% static 'CSS/bootstrap.min.css' %}">
+        <link rel='stylesheet' href="{% static 'CSS/main.css' %}">
+    </head>
+    <body>
+        {% block header %}
+        {% endblock %}   
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="background_home col-md-12">
+                        <div class="container">
+                            <div class="row align-items-center text-center">
+                                <div class="col-md-12">
+                                    <div class="home_content">
+                                        <img class="image_home" src="{% static 'img/title/alpha-logo.png' %}" alt="">
+                                        <h2>Alpha Tech Academy</h2>
+                                        <h3>
+                                            Alpha Tech Academy is a tech talent incubator that gives everyone
+                                        </br>
+                                            (even non IT background) a chance to be a professional Tech Talent
+                                        </br>
+                                            within 3 months. Contact Person: 
+                                        </br>
+                                            Email: academy@alphatech.id
+                                        </br>
+                                            Mobile Phone: 0877 9609 9530
+                                        </h3>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% block isi %}
+        {% endblock %}
+        <footer>
+            <div class="background_footer_product container-fluid"> 
+                <div class="container">
+                    <div class="row align-items-center text-center footer_body_product">
+                        <span>Our Product:</span>
+                        <img class="image_footer" src="{% static 'img/footer/logo-grey-alphapay.png' %}" alt="">
+                        <img class="image_footer" src="{% static 'img/footer/logo-grey-sepulsa.png' %}" alt="">
+                        <img class="image_footer" src="{% static 'img/footer/logo-grey-alphabill.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="background_footer_contact container-fluid"> 
+                    <div class="container">
+                        <div class="row align-items-center text-center footer_body_contact">
+                            <span>Contact Person:</span>
+                            <span class="phone">Mobile Phone: 0877 9609 9530.</span>
+                            <span class="email">Email:</span>
+                            <span class="user">academy@alphatech.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

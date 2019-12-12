@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap');
+@font-face {
+    font-family: 'SFCompactDisplay-Regular';
+    font-weight: 400;
+    src: url("../font/SFCompactDisplay-Regular.ttf") format("truetype");
+    }
+@font-face {
+    font-family: 'SFCompactDisplay-Semibold';
+    font-weight: 400;
+    src: url("../font/SFCompactDisplay-Semibold.ttf") format("truetype");
+    }
+    
+
+body {
+    padding-top:70px;
+    position: relative;
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+
+/* header */
+
+header {
+    padding: 0 0;
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 1px solid rgb(198, 200, 204);
+}
+
+.logo h1{
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.header-nav {
+    display: table;
+    margin-left: auto;
+}
+
+.header-nav__list {
+    margin: 0;
+}
+
+.header-nav__list li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+.header-nav__list li a {
+    color: #19345E;
+    display: block;
+    font-family:'Muli', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.header-nav__list li a.active, .header-nav__list li a:hover
+{
+    color:rgb(46, 198, 206);
+    text-decoration: none;
+}
+
+
+/* body  home*/
+
+.background_home{
+    background-color: rgb(46, 198, 206);
+    padding: 50px;
+    display: flex;
+}
+
+.home_content.image_home{
+    display: block;
+    align-content: center;
+    align-items: center;
+}
+
+.home_content h2{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    color: white;
+}
+
+.home_content h3{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:white;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.background_body{
+    padding: 0;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.group_body{
+    padding: 10px 0;
+    margin: 40px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.body_content h2{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:black;
+    font-weight: 400;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.body_content h3{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:black;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.body_content_h4{
+    display: block;
+    margin-top: 40px;
+    scroll-margin-bottom: 0;
+}
+
+.body_content_h4 h4{
+    font-family: 'Roboto', sans-serif;
+    font-size:35px;
+    color:black;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* footer */
+.background_footer_product{
+    margin-top: 60px;
+    background: rgb(46, 198, 206);
+    width: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+.footer_body_product{
+    justify-content: center;
+}
+
+.footer_body_product span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:black;
+    font-weight:  400;
+    margin: 2px 10px;
+}
+
+.footer_body_product img{
+    margin: 10px 10px;
+}
+
+.background_footer_contact{
+    background:black;
+    width: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.footer_body_contact{
+    justify-content: center;
+}
+.footer_body_contact span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:white;
+    font-weight: 300;
+    margin: 10px 10px;
+    align-items: center;
+}
+
+.footer_body_contact .phone{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:white;
+    font-weight: 200;
+    margin: 10px 10px;
+    align-items: center;
+}
+
+.footer_body_contact .email{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:white;
+    font-weight: 200;
+    margin: 10px 0 10px 10px;
+    align-items: center;
+}
+.footer_body_contact .user{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:blue;
+    font-weight: 200;
+    margin: 10px 10px;
+    align-items: center;
+}
+
+/* blog */
+.image_blog {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.left{
+    text-align: start;
+}
+
+.right{
+    text-align: end;
+}
+
+.judul_tajuk{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color:black;
+    font-weight: 400;
+    width: auto;
+}
+
+.isi_tajuk{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:black;
+    font-weight: 300;
+    width: auto;
+}
+
+.baca_selengkapnya{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:rgb(46, 198, 206);
+    font-weight: 300;
+    width: auto;
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+.baca_selengkapnya a{
+    text-decoration: none;
+}
+
+
+.home_button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(46, 198, 206);
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 100px;
+}
+
+.home_button:hover{
+    text-decoration: none;
+    background-color: white;
+    color:rgb(46, 198, 206);
+    border: 0px solid white
+}
+/* mentor and mentee */
+
+h2.judul{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:rgb(143, 143, 159);
+    font-weight: 400;
+    margin-bottom: 0;
+    width: auto;
+}
+
+h3.title{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:black;
+    font-weight: 500;
+    margin-bottom: 0;
+    width: auto;
+}
+
+h4.quote{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:black;
+    font-weight: 300;
+    margin-bottom: 0;
+    width: auto;
+}
+
+img.mentee{
+    width: 50%;
+
+}
+
+/* author */
+.image_author {
+    width: 100%;
+    margin:20px 0;
+    
+}
+
+.author_quote{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:black;
+    font-weight: 300;
+    margin-bottom: 0;
+    width: auto;
+    margin: 10px 0;
+}
+
+.author_table{
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:black;
+    font-weight: 300;
+    margin-bottom: 0;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.author_table th{
+    margin: 5px 0;
+}
+
+.author_table td{
+    margin: 5px 0;
+}
+
+.author_maps{
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* input */
+

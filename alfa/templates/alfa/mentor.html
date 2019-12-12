@@ -1,0 +1,69 @@
+{% extends './template.html' %}
+{% block title %}
+mentor
+{% endblock %}
+           
+
+{% load static %}
+{% block header %}
+        <header>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class='logo'>
+                            <h1>Alpha Tech Academy</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="header-nav">
+                            <ul class="header-nav__list list-unstyled">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/mentor">Mentor</a>
+                                </li>
+                                <li>
+                                    <a href="/mentee">Mentee</a>
+                                </li>
+                                <li>
+                                    <a href="/author">Author</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+{% endblock %}
+
+{% block isi %}
+        <section>
+            <div class="container">
+                <div class="body_content_h4 row align-items-center text-center">
+                    <h4>Our Mentor</h4>
+                </div>
+            <div class="container">
+                {% for d in mentor_data %}
+                <div class="group_body row align-items-center text-start">
+                    <div class="col-md-5">
+                        <img src="{{d.foto_mentor}}" alt="">
+                    </div>
+                    <div class="col-md-7 d-flex justify-content-sm-start">
+                        <div class="body_content">
+                            <h2 class= "judul">{{d.nama_mentor}}</h2>
+                            <h3 class= "title">{{d.pengalaman_mentor}}</h3>
+                        </br>
+                            <h4 class= "quote">{{d.quote_mentor}}</h4>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+{% endblock %}
